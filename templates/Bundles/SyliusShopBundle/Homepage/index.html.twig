@@ -1,0 +1,16 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+
+ {% block stylesheets %}
+        {{ sylius_template_event('sylius.shop.layout.stylesheets') }}
+        <link src="{{ asset('assets/shop/css/app.css') }}">
+    {% endblock %}
+
+{% block content %}
+<h1>cool je suis sur le bon truc</h1>
+    <div class="homepage">
+        <div class="ui hidden divider"></div>
+
+        {{ sylius_template_event('sylius.shop.homepage') }}
+    </div>
+{% endblock %}
