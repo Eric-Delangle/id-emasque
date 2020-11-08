@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <link rel="shortcut icon" type="image/png" href="/media/image/favicon.png"/>
     <title>{% block title %}{{ sylius.channel.name }}{% endblock %}</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -14,7 +14,7 @@
 
     {% block stylesheets %}
         {{ sylius_template_event('sylius.shop.layout.stylesheets') }}
-        <link src="assets/css/app.css"/>
+      {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/css/app.css'} %}
     {% endblock %}
 
     {{ sylius_template_event('sylius.shop.layout.head') }}
