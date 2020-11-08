@@ -30,10 +30,10 @@ sylius:
             verify_your_email_address: 'Vérifiez votre adresse email'
     homepage:
         about_us: 'À propos d''idée masque'
-        about_us_content: 'Bienvenu(e) sur idée masque, votre boutique numéro un qui vous offre les meilleurs produits pourris.'
+        about_us_content: 'La passion du développement web et du dessin ainsi que la triste actualité ont donné naissance à ce site.'
         carousel_header: 'Faites votre choix'
         newsletter: 'Les nouveautés'
-        newsletter_description: 'Abonnez-vous à notre newsletter pour recevoir les nouvelles offres de merde'
+        newsletter_description: 'Abonnez-vous aux nouvelles pour être informé des derniers modèles et des eventuelles promotions.'
         subscribe: 'S''abonner'
     lightbox:
         image_album_label: 'Page %1 sur %2'
