@@ -1,0 +1,9 @@
+app.Infos.apropos:
+    path: /Homepage/Infos/apropos
+    controller: App\Controller\Infos\InfosController::infosAPropos
+        
+app.Infos.conditions:
+    path: /Homepage/Infos/conditions
+    controller: App\Controller\Infos\InfosController::conditions
+
+

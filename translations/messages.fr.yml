@@ -146,7 +146,7 @@ sylius:
         bulk_actions: 'Actions groupées'
         by_position: 'Par position'
         calculator: 'Calculateur'
-        call_us: 'Appelez-nous !'
+        call_us: 'Appelez moi !'
         cancel: 'Annuler'
         cancelled: 'Annulé'
         cart: 'Panier'

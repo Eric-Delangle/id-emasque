@@ -1,7 +1,7 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: en_US
+    locale: fr_FR
 
 services:
     # Default configuration for services in *this* file
@@ -12,6 +12,9 @@ services:
         # Automatically registers your services as commands, event subscribers, etc.
         autoconfigure: true
 
+    #app.infos_controller:
+        #class: App\Controller\Infos\InfosController
+        #public: true
 
         # Allows optimizing the container by removing unused services; this also means
         # fetching services directly from the container via $container->get() won't work
@@ -30,14 +33,15 @@ services:
         exclude: '../src/{Entity,Migrations,Tests,Kernel.php}'
 
 
-
     # Controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
     App\Controller\:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-  
-
+    sylius.controller.infos:
+        class: App\Controller\Infos\InfosController
+        arguments: ['@templating']
+        tags: ['controller.service_arguments']
+   
     
-        
